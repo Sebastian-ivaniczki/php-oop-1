@@ -22,4 +22,13 @@ class Movie
     public function getTitle(){
         return $this->title;
     }
+    public function getGenre(){
+        return $this->genre;
+    }
+    public function getVote(){
+        return $this->vote;
+    }
+    public function getPlot(){
+        return $this->plot;
+    }
 };
