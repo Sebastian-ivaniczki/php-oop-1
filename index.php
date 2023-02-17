@@ -11,7 +11,7 @@ class Movie
     public $vote;
     public $plot;
 
-    public function __construct($title, $genre, $vote = 0, $plot)
+    public function __construct($title, $genre, $vote, $plot)
     {
         $this->title = $title;
         $this->genre = $genre;
@@ -33,10 +33,10 @@ class Movie
     }
 };
 
-$plot = 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum expedita quibusdam labore illum provident, porro, ullam totam autem deleniti minima eos. Nihil suscipit totam nisi facere, ipsam sint accusamus tempora!'
-$movie_1 = new Movie('Aatar', 'sci-fi', 5, $plot)
-$movie_2 = new Movie('The Lord of the Rings', 'fantasy', 4, $plot)
 
+$movie_1 = new Movie('Aatar', 'sci-fi', 5,'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum expedita quibusdam labore illum provident, porro, ullam totam autem deleniti minima eos. Nihil suscipit totam nisi facere, ipsam sint accusamus tempora!');
+$movie_2 = new Movie('The Lord of the Rings', 'fantasy', 4,'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum expedita quibusdam labore illum provident, porro, ullam totam autem deleniti minima eos. Nihil suscipit totam nisi facere, ipsam sint accusamus tempora!');
+var_dump($movie_1)
 ?>
 
 <!DOCTYPE html>
